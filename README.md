@@ -44,9 +44,7 @@
 
 ## 🏆 Trophies
 
-<p align="left">
-  <img src="https://github-profile-trophy.vercel.app/?username=your-username&theme=radical&no-frame=true&row=1&column=6" />
-</p>
+
 
 ---
 
@@ -57,5 +55,5 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=your-username&label=Profile%20Views&color=blue&style=flat" alt="profile views" />
+  <img src="https://komarev.com/ghpvc/?username=amiinemohamed&label=Profile%20Views&color=blue&style=flat" alt="profile views" />
 </p>
