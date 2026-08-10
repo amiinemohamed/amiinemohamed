@@ -1,6 +1,6 @@
 <!-- ===================== HEADER ===================== -->
-<h1 align="center">Hi 👋, I'm Your Name</h1>
-<h3 align="center">M.Sc. AI Student | Building Intelligent Systems | ML & Recommender Systems</h3>
+<h1 align="center">Hi ! I'm Amine Mohamed </h1>
+<h3 align="center">M.Sc. AI Student | Building Intelligent Systems | ML & DL</h3>
 
 <!-- Typing animation - replace &line=... text with your own lines -->
 <p align="center">
@@ -42,29 +42,6 @@
 
 ---
 
-## 📊 GitHub Stats
-
-<p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=your-username&show_icons=true&theme=radical" height="165"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=your-username&layout=compact&theme=radical" height="165"/>
-</p>
-
-<p align="left">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=your-username&theme=radical" />
-</p>
-
----
-
-## 🚀 Featured Projects
-
-### 🎓 [NAJAH-AI](https://github.com/your-username/najah-ai)
-Pedagogically grounded educational recommender system combining DBSCAN clustering, SVD, and collaborative filtering with learning-style modeling (VARK) and ZPD-based scaffolding, built on the OULAD dataset.
-
-### 🔹 [Project Name](https://github.com/your-username/project)
-One-line description of what it does and why it's interesting.
-
----
-
 ## 🏆 Trophies
 
 <p align="left">
@@ -76,8 +53,7 @@ One-line description of what it does and why it's interesting.
 ## 📫 Reach Me
 
 <p align="left">
-  <a href="https://linkedin.com/in/your-linkedin"><img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin"></a>
-  <a href="mailto:you@email.com"><img src="https://img.shields.io/badge/-Email-red?style=flat-square&logo=gmail&logoColor=white"></a>
+  <a href="https://linkedin.com/in/amiinemohamedd"><img src="https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=linkedin"></a>
 </p>
 
 <p align="center">
