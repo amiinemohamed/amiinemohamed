@@ -11,7 +11,16 @@ jobs:
   github-metrics:
     runs-on: ubuntu-latest
     steps:
+      - name: Check metrics token
+        id: check-metrics-token
+        run: |
+          if [ -z "${{ secrets.METRICS_TOKEN }}" ]; then
+            echo "::warning::METRICS_TOKEN is not set. Skipping metrics generation."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - uses: lowlighter/metrics@latest
+        if: steps.check-metrics-token.outputs.skip != 'true'
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: amiinemohamed
@@ -21,6 +30,7 @@ jobs:
           filename: metrics.base.svg
 
       - uses: lowlighter/metrics@latest
+        if: steps.check-metrics-token.outputs.skip != 'true'
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: amiinemohamed
@@ -32,6 +42,7 @@ jobs:
           filename: metrics.languages.svg
 
       - uses: lowlighter/metrics@latest
+        if: steps.check-metrics-token.outputs.skip != 'true'
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: amiinemohamed
@@ -43,6 +54,7 @@ jobs:
           filename: metrics.habits.svg
 
       - uses: lowlighter/metrics@latest
+        if: steps.check-metrics-token.outputs.skip != 'true'
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           user: amiinemohamed
