@@ -10,10 +10,16 @@ permissions:
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+    env:
+      METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
     steps:
+      - if: ${{ env.METRICS_TOKEN == '' }}
+        run: echo "::warning::Skipping metrics generation because METRICS_TOKEN is not configured."
+
       - uses: lowlighter/metrics@latest
+        if: ${{ env.METRICS_TOKEN != '' }}
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ env.METRICS_TOKEN }}
           user: amiinemohamed
           template: classic
           base: header, activity, community, repositories
@@ -21,8 +27,9 @@ jobs:
           filename: metrics.base.svg
 
       - uses: lowlighter/metrics@latest
+        if: ${{ env.METRICS_TOKEN != '' }}
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ env.METRICS_TOKEN }}
           user: amiinemohamed
           base: ""
           plugin_languages: yes
@@ -32,8 +39,9 @@ jobs:
           filename: metrics.languages.svg
 
       - uses: lowlighter/metrics@latest
+        if: ${{ env.METRICS_TOKEN != '' }}
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ env.METRICS_TOKEN }}
           user: amiinemohamed
           base: ""
           plugin_habits: yes
@@ -43,8 +51,9 @@ jobs:
           filename: metrics.habits.svg
 
       - uses: lowlighter/metrics@latest
+        if: ${{ env.METRICS_TOKEN != '' }}
         with:
-          token: ${{ secrets.METRICS_TOKEN }}
+          token: ${{ env.METRICS_TOKEN }}
           user: amiinemohamed
           base: ""
           plugin_isocalendar: yes
